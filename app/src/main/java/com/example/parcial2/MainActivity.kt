@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             val texto : String = campo.getText().toString()
             val intent : Intent = Intent(this, MainActivity2::class.java)
             val bundle = Bundle()
-            bundle.putSerializable("texto", texto)
+            bundle.putSerializable("texto-nuevo", texto)
             intent.putExtras(bundle)
             startActivity(intent)
         }

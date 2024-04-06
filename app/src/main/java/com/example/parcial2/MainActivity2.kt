@@ -12,7 +12,7 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
         val bundle: Bundle? = intent.extras
         if (bundle != null) {
-            val texto : String = bundle.getSerializable("texto").toString()
+            val texto : String = bundle.getSerializable("texto-nuevo").toString()
             mostrar.setText(texto)
         }
     }
